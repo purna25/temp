@@ -201,7 +201,7 @@ class LicensePlateDetection:
         # suppress non-maximal boxes
         self.__do_nms(boxes, 0.5)
         v_boxes, v_labels, v_scores = self.__get_boxes(boxes)
-	print(v_labels)
+        print(v_labels)
         image = self.__draw_box(frame, v_boxes, v_labels, v_scores)
         return image
 
